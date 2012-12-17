@@ -124,10 +124,11 @@ class Light(object):
 
 class Bridge(object):
     def __init__(self, ip = None, username = None):
-        if os.access(os.getenv("HOME"),os.W_OK):
-            self.config_file_path = os.path.join(os.getenv("HOME"),'.python_hue')
-        else:
-            self.config_file_path = os.path.join(os.getcwd(),'.python_hue')
+        #if os.access(os.getenv("HOME"),os.W_OK):
+        #    self.config_file_path = os.path.join(os.getenv("HOME"),'.python_hue')
+        #else:
+        #    self.config_file_path = os.path.join(os.getcwd(),'.python_hue')
+        self.config_file_path = os.path.join(os.getcwd(),'.python_hue')
         self.ip = ip
         self.username = username
         self.lights_by_id = {}
