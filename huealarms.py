@@ -9,8 +9,9 @@ bridge.get_api()
 
 class index:
 	def GET(self):
-		print bridge.get_light_objects('name')
-		return bridge.get_light_objects('name')
+		render = web.template.render('')
+		lights = b.get_light_objects('list')
+		print render.index(lights)
 
 if __name__ == "__main__":
     app = web.application(urls, globals())

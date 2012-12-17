@@ -1,3 +1,4 @@
+$def with (lights)
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -35,6 +36,10 @@
 
 </head>
 <body>
+$for light in lights:
+    <h1>$light.name</h1>
+    Hue: $light.hue<br>
+    Saturation: $light.saturation
 
 
 
