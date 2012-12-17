@@ -43,55 +43,55 @@ $for light in lights:
 
 
 
-	<!-- Primary Page Layout
-	================================================== -->
-    
-    <div class="container">
-        <div class="sixteen columns">
-            <h1 class="remove-bottom">Hue Alarms</h1>
-            <h5>Version 0.1 by Malcolm Crum</h5>
-            <hr />
+<!-- Primary Page Layout
+================================================== -->
+
+<div class="container">
+    <div class="sixteen columns">
+        <h1 class="remove-bottom">Hue Alarms</h1>
+        <h5>Version 0.1 by Malcolm Crum</h5>
+        <hr />
+    </div>
+    <div class="one-third column">
+        <h3>Alarms</h3>
+        <ul class="alarms"></ul>
+        <a href="#" class="newAlarm">+</a>
+    </div>
+    <div class="alarmDetails" style="display: none">
+        <div class="one-third column">
+            <h3>Days</h3>
+            <ul class="days"></ul>
         </div>
         <div class="one-third column">
-            <h3>Alarms</h3>
-            <ul class="alarms"></ul>
-            <a href="#" class="newAlarm">+</a>
-        </div>
-        <div class="alarmDetails" style="display: none">
-            <div class="one-third column">
-                <h3>Days</h3>
-                <ul class="days"></ul>
-            </div>
-            <div class="one-third column">
-                <h3>Lights</h3>
-                <ul class="lights"></ul>
-                <h3>Settings</h3>
-                <form action="">
-                    <label for="name">Alarm Name</label>
-                    <input type="text" id="name" />
-                    <label for="wakeTime">Wake Time</label>
-                    <input type="text" id="wakeTime" />
-                    <label for="fadeTime">Fade Time</label>
-                    <input type="text" id="fadeTime" />
-                    <label for="">Colour</label>
-                    <label for="hue"><input type="radio" name="colour" value="hue" />
-                        <span>Hue</span>
-                    </input></label>
-                    <label for="xy"><input type="radio" name="colour" value="xy" />
-                        <span>XY</span>
-                    </input></label>
-                    <label for="ct"><input type="radio" name="colour" value="ct" />
-                        <span>CT</span>
-                    </input></label>
-                    <button type="submit" id="saveAlarm">Save Alarm</button>
-                    <button>Delete Alarm</button>
-                </form>
-            </div>
+            <h3>Lights</h3>
+            <ul class="lights"></ul>
+            <h3>Settings</h3>
+            <form action="">
+                <label for="name">Alarm Name</label>
+                <input type="text" id="name" />
+                <label for="wakeTime">Wake Time</label>
+                <input type="text" id="wakeTime" />
+                <label for="fadeTime">Fade Time</label>
+                <input type="text" id="fadeTime" />
+                <label for="">Colour</label>
+                <label for="hue"><input type="radio" name="colour" value="hue" />
+                    <span>Hue</span>
+                </input></label>
+                <label for="xy"><input type="radio" name="colour" value="xy" />
+                    <span>XY</span>
+                </input></label>
+                <label for="ct"><input type="radio" name="colour" value="ct" />
+                    <span>CT</span>
+                </input></label>
+                <button type="submit" id="saveAlarm">Save Alarm</button>
+                <button>Delete Alarm</button>
+            </form>
         </div>
     </div>
+</div>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="hue.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="hue.js"></script>
 
 
 <!-- End Document
