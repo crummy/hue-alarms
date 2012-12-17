@@ -1,4 +1,4 @@
-hue-alarms
-==========
+phue
+====
 
-Alarm manager for Phillips Hue lighting system
+pHue
